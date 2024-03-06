@@ -30,7 +30,7 @@ OWNER_ID = environ.get('OWNER_ID', '6497757690')
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # for eval function, work only in a specific group
-EVAL_ID = environ.get("EVAL_ID", "-1001566837125")
+EVAL_ID = environ.get("EVAL_ID", "-1001803864228")
 
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 99999))
@@ -47,17 +47,17 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/331b8593155e
 SP = (environ.get('SP', 'https://graph.org/file/a0c2ab09ea6d665deb174.jpg https://graph.org/file/769aee62c9fbfd58fe7c0.jpg')).split()
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '6497757690 5115691197').split()]
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1228255863 5257925921').split()]
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001878326006 -1001895151847 -1001825371524').split()]
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '').split()]
-AUTH_USERS = (auth_users + ADMINS) if auth_users else []
-PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '1925104967 6497757690 5231212075').split()]
-auth_channel = environ.get('AUTH_CHANNEL')
 auth_grp = environ.get('AUTH_GROUP')
+AUTH_USERS = (auth_users + ADMINS) if auth_users else []
+PREMIUM_USER = [int(user) if id_pattern.search(user) else user for user in environ.get('PREMIUM_USER', '1228255863').split()]
+auth_channel = environ.get('AUTH_CHANNEL')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001566837125')
-reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001905367057')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '-1001729944512')
+reqst_channel = environ.get('REQST_CHANNEL_ID', '-1001968931458')
 REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_channel) else None
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 NO_RESULTS_MSG = bool(environ.get("NO_RESULTS_MSG", True))
@@ -77,39 +77,39 @@ DOWNLOAD_LOCATION = environ.get("DOWNLOAD_LOCATION", "./DOWNLOADS/AudioBoT/")
 
 #Openai
 AI = is_enabled((environ.get("AI","True")), True)
-OPENAI_API = environ.get("OPENAI_API", " ")
+OPENAI_API = environ.get("OPENAI_API", "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")
 GOOGLE_API_KEY = environ.get("GOOGLE_API_KEY", "AIzaSyD214hhYJ-xf8rfaWX044_g1VEBQ0ua55Q")
-AI_LOGS = int(environ.get("AI_LOGS", "-1001868871195")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of Bot ]
+AI_LOGS = int(environ.get("AI_LOGS", "-1001968931458")) #GIVE YOUR NEW LOG CHANNEL ID TO STORE MESSAGES THAT THEY SEARCH IN BOT PM.... [ i have added this to keep an eye on the users message, to avoid misuse of Bot ]
 
 #Auto approve 
-CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
-TEXT = environ.get("APPROVED_WELCOME_TEXT", "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.\n\‣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @codflix_bots</b>")
+CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '-1002032350599').split()]
+TEXT = environ.get("APPROVED_WELCOME_TEXT", "<b>{mention},\n\nʏᴏᴜʀ ʀᴇǫᴜᴇsᴛ ᴛᴏ ᴊᴏɪɴ {title} ɪs ᴀᴘᴘʀᴏᴠᴇᴅ.\n\‣ ᴘᴏᴡᴇʀᴇᴅ ʙʏ @𝙷𝚄𝙱𝟺𝚅𝙵</b>")
 APPROVED = environ.get("APPROVED_WELCOME", "on").lower()
 
 # Others
 VERIFY = bool(environ.get('VERIFY', False))
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'gplinks.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', 'cd767b86e8d9f1fbe1be1d55c2d0772f5fbee8c4')
-SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', '')
-SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '')
-IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
-DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'omegalinks.in')
+SHORTLINK_API = environ.get('SHORTLINK_API', '1c68341ce1ff1858a7e82f00812898da69d44a0c')
+SECOND_SHORTLINK_URL = environ.get('SECOND_SHORTLINK_URL', 'omegalinks.in')
+SECOND_SHORTLINK_API = environ.get('SECOND_SHORTLINK_API', '1c68341ce1ff1858a7e82f00812898da69d44a0c')
+IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', False))
+DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '-1001768336853').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "10")
 MAX_BTN = is_enabled((environ.get('MAX_BTN', "True")), True)
 PORT = environ.get("PORT", "8080")
 RemoveBG_API = environ.get("RemoveBG_API", "BBfqJQTBznNFqg4R7VESNW46")
-BOT_USERNAME = environ.get("BOT_USERNAME", "Lucy_Filter_bot")
-BOT_NAME = environ.get("BOT_NAME", "𝐋ᴜᴄʏ")
-NETWORK_USERNAME = environ.get("NETWORK_USERNAME", "team_netflix")
-S_GROUP = environ.get('S_GROUP', "weebs_support")
-S_CHANNEL = environ.get('S_CHANNEL', "codeflix_bots")
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/movie7xchat')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/team_netflix')
+BOT_USERNAME = environ.get("BOT_USERNAME", "Nehafilter_bot")
+BOT_NAME = environ.get("BOT_NAME", "ꜱʀᴇᴇʟᴇᴇʟᴀ")
+NETWORK_USERNAME = environ.get("NETWORK_USERNAME", "HUB4VF")
+S_GROUP = environ.get('S_GROUP', "movie_and_series_hub4vf")
+S_CHANNEL = environ.get('S_CHANNEL', "bot_update_hub4vf")
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/+q2AEU8SWC1Q2NmJl')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/HUB4VF')
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/How_to_Download_7x/26')
 IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'ᴘᴏᴡᴇʀᴇᴅ ʙʏ ᴄᴏᴅᴇғʟɪx ʙᴏᴛs')
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001868871195'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'weebs_support')
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001862601820'))
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'movie_and_series_hub4vf')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
@@ -126,7 +126,7 @@ INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 FILE_STORE_CHANNEL = [int(ch) for ch in (environ.get('FILE_STORE_CHANNEL', '-1001905367057')).split()]
 MELCOW_NEW_USERS = is_enabled((environ.get('MELCOW_NEW_USERS', "True")), True)
 PROTECT_CONTENT = is_enabled((environ.get('PROTECT_CONTENT', "False")), False)
-PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "True")), True)
+PUBLIC_FILE_STORE = is_enabled((environ.get('PUBLIC_FILE_STORE', "False")), False)
 
 QUALITIES = ["360p", "480p", "720p", "1080p", "1440p", "2160p"]
 
