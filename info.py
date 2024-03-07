@@ -26,7 +26,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '23890262'))
 API_HASH = environ.get('API_HASH', 'da7e86cf57b0e6220b8a9e0aed228a68')
-OWNER_ID = environ.get('OWNER_ID', '6497757690')
+OWNER_ID = int(environ.get('OWNER_ID', '6497757690'))
 BOT_TOKEN = environ.get('BOT_TOKEN', "")
 
 # for eval function, work only in a specific group
