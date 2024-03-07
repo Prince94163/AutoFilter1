@@ -44,6 +44,7 @@ SPELL_IMG = environ.get("SPELL_IMG", "https://te.legra.ph/file/15c1ad448dfe472a5
 VRFIED_IMG = environ.get("VRFIED_IMG", "https://graph.org/file/c9b2b779d44668f61f770.jpg")
 VRFY_IMG = environ.get("VRFY_IMG", "https://graph.org/file/81a02333bdcb58f891785.jpg")
 SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://graph.org/file/331b8593155e9fcc741ba.jpg'))
+PREMIUM_PLAN = environ.get("PREMIUM_PLAN", "https://t.me/HUB4VF") # Premium plan url like telegraph or telegram message link
 SP = (environ.get('SP', 'https://graph.org/file/a0c2ab09ea6d665deb174.jpg https://graph.org/file/769aee62c9fbfd58fe7c0.jpg')).split()
 
 # Admins, Channels & Users
