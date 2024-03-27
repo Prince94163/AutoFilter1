@@ -12,6 +12,7 @@ pip3 install -U -r requirements.txt
 pip3 install spotdl
 pip3 install yt-dlp
 pip3 install speedtest
+pip3 install youtube-dl
 
 echo "Starting Bot...."
 python3 bot.py
