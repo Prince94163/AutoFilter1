@@ -13,6 +13,7 @@ pip3 install spotdl
 pip3 install yt-dlp
 pip3 install speedtest
 pip3 install youtube-dl
+pip3 install speedtest-cli
 
 echo "Starting Bot...."
 python3 bot.py
