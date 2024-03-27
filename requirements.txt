@@ -18,7 +18,6 @@ motor==2.5.1
 
 #---ytdl----#
 youtube-search
-yt-dlp==2023.2.17
 
 #---imdb---#
 git+https://github.com/cinemagoer/cinemagoer
@@ -28,7 +27,6 @@ opencv-python-headless==4.7.0.68
 googletrans==3.1.0a0
 telegraph==2.2.0
 gTTS==2.3.1
-speedtest==0.0.1
 humanize==4.6.0
 Pillow==9.4.0
 NumPy
@@ -44,7 +42,6 @@ search_engine_parser
 
 ffmpeg
 youtube-search-python==1.4.6
-youtube-dl
 PyPDF2
 pyshorteners
 countryinfo
@@ -65,8 +62,6 @@ YoutubeTags
 beautifulsoup4
 motor
 python-docx
-speedtest
-yt-dlp
 python-dateutil
 google-generativeai
 datetime>=4.4
@@ -91,7 +86,6 @@ asyncio
 pytube
 youtube-search
 youtube-search-python
-spotdl
 Pillow
 wget
 discord
