@@ -46,7 +46,6 @@ PyPDF2
 pyshorteners
 countryinfo
 python-math
-speedtest-cli
 python-dotenv
 openai==0.25.0
 python-telegram-bot==12.8
